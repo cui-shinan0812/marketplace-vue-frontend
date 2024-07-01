@@ -1,86 +1,87 @@
 import {
-  mdiAccountCircle,
   mdiMonitor,
   mdiGithub,
-  mdiLock,
-  mdiAlertCircle,
   mdiSquareEditOutline,
   mdiTable,
   mdiViewList,
   mdiTelevisionGuide,
   mdiResponsive,
   mdiPalette,
-  mdiReact
+  mdiReact,
+  mdiAlertRhombus,
+  mdiMovieOpenCog,
+  mdiQualityMedium
 } from '@mdi/js'
 
 export default [
   {
-    to: '/dashboard',
+    to: '/',
     icon: mdiMonitor,
     label: 'Dashboard'
   },
   {
-    to: '/tables',
-    label: 'Tables',
+    to: '/products',
+    label: 'Products',
     icon: mdiTable
   },
   {
-    to: '/forms',
-    label: 'Forms',
+    to: '/contacts',
+    label: 'Contacts',
     icon: mdiSquareEditOutline
   },
   {
-    to: '/ui',
-    label: 'UI',
-    icon: mdiTelevisionGuide
-  },
-  {
-    to: '/responsive',
-    label: 'Responsive',
+    to: '/company',
+    label: 'Company',
     icon: mdiResponsive
-  },
-  {
-    to: '/',
-    label: 'Styles',
-    icon: mdiPalette
   },
   {
     to: '/profile',
     label: 'Profile',
-    icon: mdiAccountCircle
+    icon: mdiPalette
   },
   {
-    to: '/login',
-    label: 'Login',
-    icon: mdiLock
+    to: '/assistant',
+    label: 'Assistant',
+    icon: mdiTelevisionGuide
   },
   {
-    to: '/error',
-    label: 'Error',
-    icon: mdiAlertCircle
+    to: '/invoices',
+    label: 'Invoices',
+    icon: mdiMovieOpenCog
   },
   {
-    label: 'Dropdown',
+    to: '/quotations',
+    label: 'Quotations',
+    icon: mdiQualityMedium
+  },
+  {
+    to: '/contracts',
+    label: 'Contracts',
+    icon: mdiMonitor
+  },
+  {
+    to: '/settings',
+    label: 'Settings',
+    icon: mdiAlertRhombus
+  },
+  
+  {
+    label: 'Term',
     icon: mdiViewList,
     menu: [
       {
-        label: 'Item One'
+        href: 'https://github.com/cui-shinan0812/marketplace-vue-frontend',
+        label: 'Privacy',
+        icon: mdiGithub,
+        target: '_blank'
       },
       {
-        label: 'Item Two'
+        href: 'https://github.com/cui-shinan0812/marketplace-vue-frontend',
+        label: 'React version',
+        icon: mdiReact,
+        target: '_blank'
       }
     ]
   },
-  {
-    href: 'https://github.com/justboil/admin-one-vue-tailwind',
-    label: 'GitHub',
-    icon: mdiGithub,
-    target: '_blank'
-  },
-  {
-    href: 'https://github.com/justboil/admin-one-react-tailwind',
-    label: 'React version',
-    icon: mdiReact,
-    target: '_blank'
-  }
+  
 ]

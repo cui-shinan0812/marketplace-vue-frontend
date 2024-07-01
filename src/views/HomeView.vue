@@ -8,7 +8,9 @@ import {
   mdiMonitorCellphone,
   mdiReload,
   mdiGithub,
-  mdiChartPie
+  mdiChartPie,
+  mdiViewDashboard,
+  mdiAccountTieHatOutline
 } from '@mdi/js'
 import * as chartConfig from '@/components/Charts/chart.config.js'
 import LineChart from '@/components/Charts/LineChart.vue'
@@ -23,6 +25,7 @@ import CardBoxClient from '@/components/CardBoxClient.vue'
 import LayoutAuthenticated from '@/layouts/LayoutAuthenticated.vue'
 import SectionTitleLineWithButton from '@/components/SectionTitleLineWithButton.vue'
 import SectionBannerStarOnGitHub from '@/components/SectionBannerStarOnGitHub.vue'
+import Header from '@/components/Header.vue'
 
 const chartData = ref(null)
 
@@ -42,19 +45,16 @@ const transactionBarItems = computed(() => mainStore.history)
 </script>
 
 <template>
+  
   <LayoutAuthenticated>
     <SectionMain>
-      <SectionTitleLineWithButton :icon="mdiChartTimelineVariant" title="Overview" main>
-        <BaseButton
-          href="https://github.com/justboil/admin-one-vue-tailwind"
-          target="_blank"
-          :icon="mdiGithub"
-          label="Star on GitHub"
-          color="contrast"
-          rounded-full
-          small
-        />
+      
+      <SectionTitleLineWithButton :icon="mdiViewDashboard" title="Dashboard">
+        <BaseButton :icon="mdiReload" color="whiteDark" @click="fillChartData" />
       </SectionTitleLineWithButton>
+      <NotificationBar color="danger" :icon="mdiMonitorCellphone">
+        <b>　Performance up to 2.5 times</b> <p>　Burn up your business!</p>
+      </NotificationBar>
 
       <div class="grid grid-cols-1 gap-6 lg:grid-cols-3 mb-6">
         <CardBoxWidget
@@ -70,7 +70,7 @@ const transactionBarItems = computed(() => mainStore.history)
           trend-type="down"
           color="text-blue-500"
           :icon="mdiCartOutline"
-          :number="7770"
+          :number="2840300"
           prefix="$"
           label="Sales"
         />
@@ -125,7 +125,17 @@ const transactionBarItems = computed(() => mainStore.history)
       <SectionTitleLineWithButton :icon="mdiAccountMultiple" title="Clients" />
 
       <NotificationBar color="info" :icon="mdiMonitorCellphone">
-        <b>Responsive table.</b> Collapses on mobile
+        <b>Your Satisfaction, Our Commitment.</b> 
+      </NotificationBar>
+
+      <CardBox has-table>
+        <TableSampleClients />
+      </CardBox>
+
+      <SectionTitleLineWithButton :icon="mdiAccountTieHatOutline" title="Suppliers" />
+
+      <NotificationBar color="warning" :icon="mdiMonitorCellphone">
+        <b>Empowering Your Success.</b> 
       </NotificationBar>
 
       <CardBox has-table>

@@ -9,28 +9,39 @@ import {
   mdiLogout,
   mdiThemeLightDark,
   mdiGithub,
-  mdiReact
+  mdiReact,
+  mdiLanguageC,
+  mdiSignLanguage,
+  mdiLanguageFortran,
+  mdiFlagTriangle,
+  mdiCardsPlayingDiamond,
+  mdiDiamondStone
 } from '@mdi/js'
 
 export default [
   {
-    icon: mdiMenu,
-    label: 'Sample menu',
+    isCurrentUser: false,
     menu: [
       {
-        icon: mdiClockOutline,
-        label: 'Item One'
+        icon: mdiAccount,
+        label: 'Sportopia',
+        to: '/profile'
       },
       {
-        icon: mdiCloud,
-        label: 'Item Two'
+        icon: mdiCogOutline,
+        label: 'Settings'
+      },
+      {
+        icon: mdiEmail,
+        label: 'Messages'
       },
       {
         isDivider: true
       },
       {
-        icon: mdiCrop,
-        label: 'Item Last'
+        icon: mdiLogout,
+        label: 'Log Out',
+        isLogout: true
       }
     ]
   },
@@ -67,17 +78,17 @@ export default [
     isToggleLightDark: true
   },
   {
-    icon: mdiGithub,
-    label: 'GitHub',
+    icon: mdiCardsPlayingDiamond,
+    label: 'Lang',
     isDesktopNoLabel: true,
-    href: 'https://github.com/justboil/admin-one-vue-tailwind',
+    href: 'https://github.com/cui-shinan0812/marketplace-vue-frontend',
     target: '_blank'
   },
   {
-    icon: mdiReact,
+    icon: mdiDiamondStone,
     label: 'React version',
     isDesktopNoLabel: true,
-    href: 'https://github.com/justboil/admin-one-react-tailwind',
+    href: 'https://github.com/cui-shinan0812/marketplace-vue-frontend',
     target: '_blank'
   },
   {

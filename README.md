@@ -52,7 +52,7 @@
 
 This is **Tailwind Vue dashboard** version
 
-Looking for **Tailwind React TypeScript**? Check [Admin One - React TypeScript Tailwind dashboard](https://github.com/justboil/admin-one-react-tailwind) version
+Looking for **Tailwind React TypeScript**? Check [Admin One - React TypeScript Tailwind dashboard](https://github.com/cui-shinan0812/marketplace-vue-frontend) version
 
 ## Responsive layout
 
@@ -100,9 +100,9 @@ Get code & install. Then `dev` or `build` with [Vite](#vite-builds) or integrate
 
 #### Get the repo
 
-* [Create new repo](https://github.com/justboil/admin-one-vue-tailwind/generate) with this template
+* [Create new repo](https://github.com/cui-shinan0812/marketplace-vue-frontend/generate) with this template
 * &hellip; or clone this repo on GitHub
-* &hellip; or [download .zip](https://github.com/justboil/admin-one-vue-tailwind/archive/master.zip) from GitHub
+* &hellip; or [download .zip](https://github.com/cui-shinan0812/marketplace-vue-frontend/archive/master.zip) from GitHub
 
 #### Install
 
@@ -140,11 +140,11 @@ npm run lint
 
 ### Nuxt 3.x integration
 
-This dashboard can be integrated with Nuxt 3.x. [Check guide](https://github.com/justboil/admin-one-vue-tailwind/tree/master/.nuxt-guide) for more information
+This dashboard can be integrated with Nuxt 3.x. [Check guide](https://github.com/cui-shinan0812/marketplace-vue-frontend/tree/master/.nuxt-guide) for more information
 
 ### Laravel 9.x integration
 
-This dashboard can be integrated with Laravel 9.x Breeze Inertia + Vue.js stack. [Check guide](https://github.com/justboil/admin-one-vue-tailwind/tree/master/.laravel-guide) for more information
+This dashboard can be integrated with Laravel 9.x Breeze Inertia + Vue.js stack. [Check guide](https://github.com/cui-shinan0812/marketplace-vue-frontend/tree/master/.laravel-guide) for more information
 
 ## Docs
 

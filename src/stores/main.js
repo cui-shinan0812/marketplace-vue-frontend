@@ -2,6 +2,7 @@ import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 import axios from 'axios'
 
+
 export const useMainStore = defineStore('main', () => {
   const userName = ref('John Doe')
   const userEmail = ref('doe.doe.doe@example.com')

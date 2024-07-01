@@ -13,19 +13,19 @@ import CardBoxComponentEmpty from '@/components/CardBoxComponentEmpty.vue'
 <template>
   <LayoutAuthenticated>
     <SectionMain>
-      <SectionTitleLineWithButton :icon="mdiTableBorder" title="Tables" main>
-        <BaseButton
-          href="https://github.com/justboil/admin-one-vue-tailwind"
+      <SectionTitleLineWithButton :icon="mdiTableBorder" title="Products Management" main>
+        <!-- <BaseButton
+          href="https://github.com/cui-shinan0812/marketplace-vue-frontend"
           target="_blank"
           :icon="mdiGithub"
           label="Star on GitHub"
           color="contrast"
           rounded-full
           small
-        />
+        /> -->
       </SectionTitleLineWithButton>
       <NotificationBar color="info" :icon="mdiMonitorCellphone">
-        <b>Responsive table.</b> Collapses on mobile
+        <b>Once you updated your product, will deploy to release immediately.</b> 
       </NotificationBar>
 
       <CardBox class="mb-6" has-table>

@@ -22,9 +22,9 @@ const selectOptions = [
 ]
 
 const form = reactive({
-  name: 'John Doe',
+  name: 'Kevin Cui',
   email: 'john.doe@example.com',
-  phone: '',
+  phone: '67049392',
   department: selectOptions[0],
   subject: '',
   question: ''
@@ -58,15 +58,15 @@ const formStatusSubmit = () => {
   <LayoutAuthenticated>
     <SectionMain>
       <SectionTitleLineWithButton :icon="mdiBallotOutline" title="Forms example" main>
-        <BaseButton
-          href="https://github.com/justboil/admin-one-vue-tailwind"
+        <!-- <BaseButton
+          href="https://github.com/cui-shinan0812/marketplace-vue-frontend"
           target="_blank"
           :icon="mdiGithub"
           label="Star on GitHub"
           color="contrast"
           rounded-full
           small
-        />
+        /> -->
       </SectionTitleLineWithButton>
       <CardBox form @submit.prevent="submit">
         <FormField label="Grouped with icons">

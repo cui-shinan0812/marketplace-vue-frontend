@@ -5,29 +5,20 @@ import Home from '@/views/HomeView.vue'
 const routes = [
   {
     meta: {
-      title: 'Select style'
+      title: 'Dashboard Default'
     },
     path: '/',
-    name: 'style',
-    component: Style
-  },
-  {
-    // Document title tag
-    // We combine it with defaultDocumentTitle set in `src/main.js` on router.afterEach hook
-    meta: {
-      title: 'Dashboard'
-    },
-    path: '/dashboard',
     name: 'dashboard',
     component: Home
   },
+  
   {
     meta: {
       title: 'Tables'
     },
-    path: '/tables',
+    path: '/products',
     name: 'tables',
-    component: () => import('@/views/TablesView.vue')
+    component: () => import('@/views/ProductsView.vue')
   },
   {
     meta: {
@@ -47,6 +38,62 @@ const routes = [
   },
   {
     meta: {
+      title: 'Assistant'
+    },
+    path: '/assistant',
+    name: 'assistant',
+    component: () => import('@/views/AssistantView.vue')
+  },
+  {
+    meta: {
+      title: 'Company'
+    },
+    path: '/company',
+    name: 'company',
+    component: () => import('@/views/CompanyView.vue')
+  },
+  {
+    meta: {
+      title: 'Contacts'
+    },
+    path: '/contacts',
+    name: 'contacts',
+    component: () => import('@/views/ContactsView.vue')
+  },
+  {
+    meta: {
+      title: 'Contracts'
+    },
+    path: '/contracts',
+    name: 'contracts',
+    component: () => import('@/views/ContractsView.vue')
+  },
+  {
+    meta: {
+      title: 'Invoices'
+    },
+    path: '/invoices',
+    name: 'invoices',
+    component: () => import('@/views/InvociesView.vue')
+  },
+  {
+    meta: {
+      title: 'Settings'
+    },
+    path: '/settings',
+    name: 'settings',
+    component: () => import('@/views/SettingsView.vue')
+  },
+  {
+    meta: {
+      title: 'Quotations'
+    },
+    path: '/quotations',
+    name: 'quotations',
+    component: () => import('@/views/QuotationsView.vue')
+  },
+  {
+    meta: {
       title: 'Ui'
     },
     path: '/ui',
@@ -61,6 +108,7 @@ const routes = [
     name: 'responsive',
     component: () => import('@/views/ResponsiveView.vue')
   },
+  
   {
     meta: {
       title: 'Login'
@@ -76,6 +124,14 @@ const routes = [
     path: '/error',
     name: 'error',
     component: () => import('@/views/ErrorView.vue')
+  },
+  {
+    meta: {
+      title: 'MarketPlaceHome'
+    },
+    path: '/MarketPlaceHome',
+    name: 'MarketPlaceHome',
+    component: () => import('@/views/MarketPlaceHome.vue')
   }
 ]
 

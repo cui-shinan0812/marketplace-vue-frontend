@@ -1,7 +1,7 @@
 {
   "data": [
     {
-      "amount": 375.53,
+      "amount": 37000,
       "account": "45721474",
       "name": "Home Loan Account",
       "date": "3 days ago",
@@ -9,7 +9,7 @@
       "business": "Turcotte"
     },
     {
-      "amount": 470.26,
+      "amount": 47000,
       "account": "94486537",
       "name": "Savings Account",
       "date": "3 days ago",
@@ -17,7 +17,7 @@
       "business": "Murazik - Graham"
     },
     {
-      "amount": 971.34,
+      "amount": 97100,
       "account": "63189893",
       "name": "Checking Account",
       "date": "5 days ago",
@@ -25,7 +25,7 @@
       "business": "Fahey - Keebler"
     },
     {
-      "amount": 374.63,
+      "amount": 37400,
       "account": "74828780",
       "name": "Auto Loan Account",
       "date": "7 days ago",

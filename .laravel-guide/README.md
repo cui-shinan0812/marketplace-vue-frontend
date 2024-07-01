@@ -2,7 +2,7 @@
 
 [![Vue 3.x Tailwind 3.x admin dashboard demo](https://static.justboil.me/templates/one/repo-styles.png)](https://justboil.github.io/admin-one-vue-tailwind/)
 
-This guide will help you integrate your Laravel application with [Admin One - free Vue 3 Tailwind 3 Admin Dashboard with dark mode](https://github.com/justboil/admin-one-vue-tailwind).
+This guide will help you integrate your Laravel application with [Admin One - free Vue 3 Tailwind 3 Admin Dashboard with dark mode](https://github.com/cui-shinan0812/marketplace-vue-frontend).
 
 **Admin One** is simple, fast and free Vue.js 3.x Tailwind CSS 3.x admin dashboard with Laravel 9.x integration.
 
@@ -58,7 +58,7 @@ npm i pinia @tailwindcss/line-clamp @mdi/js chart.js numeral -D
 
 **Before you start,** we recommend to rename Laravel Breeze's original folders (so you'll keep them for future reference) — `resources/js/Components` `resources/js/Layouts` `resources/js/Pages` to something like ComponentsBreeze, LayoutsBreeze, etc.
 
-Now clone [justboil/admin-one-vue-tailwind](https://github.com/justboil/admin-one-vue-tailwind) project somewhere locally (into any separate folder)
+Now clone [justboil/admin-one-vue-tailwind](https://github.com/cui-shinan0812/marketplace-vue-frontend) project somewhere locally (into any separate folder)
 
 Next, copy these files **from justboil/admin-one-vue-tailwind project** directory **to laravel project** directory:
 
