@@ -5,7 +5,7 @@ import Home from '@/views/HomeView.vue'
 const routes = [
   {
     meta: {
-      title: 'Dashboard Default'
+      title: 'dashboard'
     },
     path: '/',
     name: 'dashboard',
@@ -108,7 +108,14 @@ const routes = [
     name: 'responsive',
     component: () => import('@/views/ResponsiveView.vue')
   },
-  
+  {
+    meta: {
+      title: 'Register'
+    },
+    path: '/register',
+    name: 'register',
+    component: () => import('@/views/RegisterView.vue')
+  },
   {
     meta: {
       title: 'Login'
@@ -116,6 +123,14 @@ const routes = [
     path: '/login',
     name: 'login',
     component: () => import('@/views/LoginView.vue')
+  },
+  {
+    meta: {
+      title: 'Logout'
+    },
+    path: '/logout',
+    name: 'logout',
+    component: () => import('@/views/LogoutView.vue')
   },
   {
     meta: {

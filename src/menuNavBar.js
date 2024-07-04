@@ -19,32 +19,7 @@ import {
 } from '@mdi/js'
 
 export default [
-  {
-    isCurrentUser: false,
-    menu: [
-      {
-        icon: mdiAccount,
-        label: 'Sportopia',
-        to: '/profile'
-      },
-      {
-        icon: mdiCogOutline,
-        label: 'Settings'
-      },
-      {
-        icon: mdiEmail,
-        label: 'Messages'
-      },
-      {
-        isDivider: true
-      },
-      {
-        icon: mdiLogout,
-        label: 'Log Out',
-        isLogout: true
-      }
-    ]
-  },
+  
   {
     isCurrentUser: true,
     menu: [

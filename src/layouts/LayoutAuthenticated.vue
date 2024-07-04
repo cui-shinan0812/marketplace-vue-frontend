@@ -33,6 +33,8 @@ const menuClick = (event, item) => {
 
   if (item.isLogout) {
     //
+    router.push('/logout')
+      
   }
 }
 </script>
@@ -79,3 +81,20 @@ const menuClick = (event, item) => {
     </div>
   </div>
 </template>
+
+<script>
+  export default {
+    name: 'layoutAuthenticated',
+    data() {
+      
+    },
+    methods: {
+      logOut() {
+        this.$store.dispatch('logoutUser')
+        .then(() => {
+          this.$router.push({ name: '/' })
+        })}
+      }
+    }
+  
+</script>
