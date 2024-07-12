@@ -11,9 +11,8 @@ import LayoutGuest from '@/layouts/LayoutGuest.vue'
     <SectionFullScreen v-slot="{ cardClass }" bg="pinkRed">
       <CardBox :class="cardClass">
         <div class="space-y-3">
-          <h1 class="text-2xl">Are you going to signout?</h1>
+          <h1 class="text-2xl">Are you going to sign out?</h1>
 
-          <p>Warning: Many feature only available in login status.</p>
         </div>
 
         <template #footer>

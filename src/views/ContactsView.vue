@@ -34,31 +34,16 @@ const handleStyleChange = (slug) => {
         </h1>
         <h2 class="text-xl md:text-xl text-center text-white mb-12">
           Powered by 
-          <code class="px-1.5 py-0.5 rounded bg-white bg-opacity-20">Sportopia</code>
+          <code class="px-1.5 py-0.5 rounded bg-white bg-opacity-20">Bridge AI Gaming</code>
         </h2>
-        <div class="grid gap-6 grid-cols-1 lg:grid-cols-2 px-6 max-w-6xl mx-auto">
-          <CardBox
-            v-for="style in styles"
-            :key="style"
-            class="cursor-pointer bg-gray-50"
-            is-hoverable
-            @click="handleStyleChange(style)"
-          >
-            <div class="mb-3 md:mb-6">
-              <img
-                :src="`https://static.justboil.me/templates/one/small/${style}-v3.png`"
-                width="1280"
-                height="720"
-              />
-            </div>
-
-            <h1 class="text-xl md:text-2xl font-black capitalize">
-              {{ style }}
-            </h1>
-            <h2 class="text-lg md:text-xl"></h2>
-          </CardBox>
-        </div>
+        <stripe-buy-button
+  buy-button-id="buy_btn_1PaXP5HqnAEES4j7PVwsarVq"
+  publishable-key="pk_live_51OACSrHqnAEES4j7qf2NjhTVhtfVRRpyeZH6hypsriaykkSpiuZPPj9MbtPk1aPY9pFyzFetJE784bY1cWvyUTqg00xvMcVeAu"
+>
+</stripe-buy-button>
+        
       </SectionMain>
     </div>
   </LayoutGuest>
 </template>
+

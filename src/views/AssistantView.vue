@@ -34,7 +34,7 @@ const handleStyleChange = (slug) => {
         </h1>
         <h2 class="text-xl md:text-xl text-center text-white mb-12">
           Powered by 
-          <code class="px-1.5 py-0.5 rounded bg-white bg-opacity-20">Sportopia</code>
+          <code class="px-1.5 py-0.5 rounded bg-white bg-opacity-20">Bridge AI Gaming</code>
         </h2>
         <div class="grid gap-6 grid-cols-1 lg:grid-cols-2 px-6 max-w-6xl mx-auto">
           <CardBox

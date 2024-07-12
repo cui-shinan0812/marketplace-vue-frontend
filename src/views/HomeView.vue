@@ -87,6 +87,7 @@ const transactionBarItems = computed(() => mainStore.history)
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
         <div class="flex flex-col justify-between">
+          Recent Events
           <CardBoxTransaction
             v-for="(transaction, index) in transactionBarItems"
             :key="index"
@@ -99,6 +100,7 @@ const transactionBarItems = computed(() => mainStore.history)
           />
         </div>
         <div class="flex flex-col justify-between">
+          Selected Clients
           <CardBoxClient
             v-for="client in clientBarItems"
             :key="client.id"

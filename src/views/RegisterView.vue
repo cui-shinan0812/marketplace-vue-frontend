@@ -74,7 +74,7 @@ const submit = () => {
     name: 'login',
     data() {
       return {
-        name:'sportopia',
+        name:'Bridge AI Gaming',
         email: '',
         username: '',
         password: '',
