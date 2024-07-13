@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 import axios from 'axios'
+import { axiosBase } from '../api/axios-base';
 
 
 export const useMainStore = defineStore('main', () => {

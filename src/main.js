@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
+import store from './store.js'
 import App from './App.vue'
 import router from './router'
 import { useMainStore } from '@/stores/main.js'
@@ -13,7 +14,7 @@ import './assets/css/font.css';
 const pinia = createPinia()
 
 // Create Vue app
-createApp(App).use(router).use(pinia).mount('#app')
+createApp(App).use(router).use(pinia).use(store).mount('#app')
 
 // Init main store
 const mainStore = useMainStore(pinia)

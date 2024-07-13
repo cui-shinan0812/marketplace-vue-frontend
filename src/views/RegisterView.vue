@@ -21,11 +21,18 @@ const submit = () => {
 <template>
   <LayoutGuest>
     <SectionFullScreen v-slot="{ cardClass }" bg="purplePink">
-      <CardBox :class="cardClass" is-form @submit.prevent="loginUser">
-        <FormField label="Login" help="Please enter your login">
+      <CardBox :class="cardClass" is-form @submit.prevent="registerUser">
+        
+        <FormField label="Email" help="Please enter your Email">
+          <FormControl
+            v-model="email"
+            name="email"
+            autocomplete="email"
+          />
+        </FormField>
+        <FormField label="Username" help="Please enter your Username">
           <FormControl
             v-model="username"
-            
             name="username"
             autocomplete="username"
           />
@@ -34,19 +41,22 @@ const submit = () => {
         <FormField label="Password" help="Please enter your password">
           <FormControl
             v-model="password"
-            
             type="password"
             name="password"
             autocomplete="current-password"
           />
         </FormField>
 
-        <FormCheckRadio
-          v-model="remember"
-          name="remember"
-          label="Remember"
-          :input-value="true"
-        />
+        <FormField label="Comfirm Password" help="Please enter your password again">
+          <FormControl
+            v-model="confirm"
+            
+            type="password"
+            name="confirm"
+            autocomplete="current-password"
+          />
+        </FormField>
+
 
         <template #footer>
           <BaseButtons>
@@ -64,28 +74,26 @@ const submit = () => {
     name: 'login',
     data() {
       return {
+        name:'Bridge AI Gaming',
+        email: '',
         username: '',
         password: '',
-        remember: true
+        confirm: ''
       }
     },
     methods: {
 
-      loginUser () { // call loginUSer action
-        this.$store.dispatch('loginUser', {
-          username: this.username,
-          password: this.password
-        })
-            .then(() => {
-              
-              this.$router.push({ name: 'dashboard' })
+        registerUser () {
+            this.$store.dispatch('registerUser', {
+                name: this.name,
+                email: this.email,
+                username: this.username,
+                password: this.password,
+                confirm: this.confirm
+            }).then(() => {
+                this.$router.push({ name: 'login' })
             })
-          .catch(err => {
-            console.log(err)
-            this.wrongCred = true // if the credentials were wrong set wrongCred to true
-          })
         }
-      }
     }
-  
+}
 </script>

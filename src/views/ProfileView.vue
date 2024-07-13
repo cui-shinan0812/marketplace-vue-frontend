@@ -134,3 +134,41 @@ const submitPass = () => {
     </SectionMain>
   </LayoutAuthenticated>
 </template>
+
+<script>
+
+  import { getAPI } from '../api/axios-base'
+  import { mapState } from 'vuex'
+  export default {
+    name: 'Profile',
+    data() {
+      
+    },
+    created() {
+      console.log(this.$store.state.accessToken);
+      getAPI.get('/mods/', { headers: { Authorization: `Bearer ${this.$store.state.accessToken}` } }) // proof that your access token is still valid; if not the
+        // axios getAPI response interceptor will attempt to get a new  access token from the server. check out ../api/axios-base.js getAPI instance response interceptor
+          .then(response => {
+            this.$store.state.APIData = response.data // store the response data in store
+          })
+          .catch(err => { // refresh token expired or some other error status
+            console.log(err)
+            this.$router.push({ name: 'login' })
+          })
+    },
+    methods: {
+
+        registerUser () {
+            this.$store.dispatch('registerUser', {
+                name: this.name,
+                email: this.email,
+                username: this.username,
+                password: this.password,
+                confirm: this.confirm
+            }).then(() => {
+                this.$router.push({ name: 'login' })
+            })
+        }
+    }
+}
+</script>
